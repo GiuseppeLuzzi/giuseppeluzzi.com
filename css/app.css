@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	font-family: 'Raleway';
+	background: rgb(241, 241, 241);
+	margin-bottom: 50px;
+}
+
+textarea:focus, input:focus{
+	outline: none;
+}
+
+.head {
+	background: #1c1624;
+	border-radius: 0;
+}
+
+.head h2 a {
+	position: relative;
+	text-decoration: none;
+	color: #FFFFFF !important;
+}
+
+.head h2 a:hover {
+	color: #bfbfbf !important;
+	cursor: default;
+}
+
+.head h2 a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #bfbfbf;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.head h2 a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+#about .languages-list {
+	font-family: 'Courier New';
+}
+
+#contacts .lighter {
+	color: rgba(52, 122, 183, 0.77);
+}
+
+#login-box {
+	float: none;
+	margin: 10% auto;
+}
+
+#login-box .head {
+	padding: 5px 10px 5px 10px;
+}
+
+#login-box .head h2{
+	margin-top: 10px;
+}
+
+#login-box .sub-head {
+	display: block;
+	background-color: #333333;
+	color: rgb(241, 241, 241);
+	padding: 5px 10px 5px 10px;
+	font-size: 80%;
+}
+
+#login-box .content {
+	background-color: rgba(51, 51, 51, 0.1);
+	min-height: 200px;
+	padding: 20px 10px 5px 10px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	height: 50px;
+	padding: 15px;
+	color: #bfbfbf;
+	width: 100%;
+}
